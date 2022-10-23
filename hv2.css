@@ -1,0 +1,595 @@
+/*body {
+  background-color: #8f9ba9;
+}*/
+
+  .primerdiv {
+    position: absolute;
+    margin-left: 15%;
+    height: 50%;
+    width: 70%;
+    background-color: #3e4452;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /*inicio foto*/
+  .primerdiv .box {
+    position: relative;
+    width: 28%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+  .circular {
+    border-radius: 50%;
+    /*box-shadow: 0px 0px 50px 0px rgba(220, 216, 216, 0.8);*/
+    animation: fadeIn 5s ease;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      filter: blur(20px);
+    }
+    10% {
+      opacity: 1;
+      filter: brightness(2) blur(10px);
+    }
+  }
+  /*fin foto*/
+
+  /*inicio nombre*/
+  .nombre {
+    position: absolute;
+    right: 0px;
+    font-size: 15px;
+    color: #ebe52fe2;
+    text-align: center;
+  }
+  h3 {
+    color: white;
+  }
+  .primerdiv .nombre {
+    position: relative;
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+  }
+  .nombre h1 h3 {
+    width: 100%;
+    height: auto;
+  }
+  .nom {
+    position: relative;
+    top: 30px;
+  }
+  /*fin nombre*/
+
+  /*inicio diseño primer div*/
+  .circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #2b3241;
+    animation: wave 0.8s forwards;
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #686ffd;
+  }
+  @keyframes wave {
+    0% {
+      width: 5px;
+      height: 5px;
+      opacity: 1;
+    }
+    90% {
+      width: 50px;
+      height: 50px;
+      opacity: 0.5;
+    }
+    100% {
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+    }
+  }
+  /*fin */
+
+  /*inicio  estilos iconos*/
+  .primerdiv .container {
+    width: 30%;
+    height: 20%;
+    overflow: hidden;
+    position: relative;
+  }
+  .container {
+    transform: translate(0%, -10%);
+    text-align: center;
+  }
+  .container .btn {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    box-shadow: 0 5px 15px -5px #aaa;
+    margin: 10px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+    color: #f2f2f2;
+  }
+  .container .btn img {
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    z-index: 4;
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+  }
+  .container .btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(#00c6ff, #0072ff);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  .container .btn:hover img {
+    color: #fff;
+    transform: scale(1.3);
+  }
+  .container .btn:hover::before {
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+  }
+
+  @keyframes onHover {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+    50% {
+      left: 10%;
+      top: -30%;
+    }
+    100% {
+      left: -10%;
+      top: -10%;
+    }
+  }
+  /*fin iconos*/
+
+  /*inicio formas*/
+
+  .triangulo {
+    clip-path: polygon(50% 1%, 0% 100%, 100% 100%);
+    background-color: #747b93;
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    height: 90%;
+  }
+  .triangulo2 {
+    clip-path: polygon(0 0, 0% 100%, 85% 0);
+    background-color: #747b93;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+  }
+  .triangulo3 {
+    clip-path: polygon(0 0, 50% 48%, 100% 0);
+    background-color: #747b93;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0%;
+  }
+  /*fin formas*/
+  .segundodiv {
+    position: absolute;
+    top: 51%;
+    margin-left: 15%;
+    height: 120%;
+    width: 35%;
+    background-color: #ebe52fe2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .objetivos {
+    position: absolute;
+    width: 70%;
+    margin-top: -50px;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    
+  }
+  .h1seg {
+    top: -100px;
+    font-size: 35px;
+    color: black;
+  }
+  .segundodiv .objetivos {
+    position: relative;
+    top: -35%;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+  }
+  .objetivos h1 p {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .skill {
+    position: absolute;
+    top: 26%;
+    width: 70%;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .ski {
+    position: relative;
+    top: -15px;
+  }
+
+  .contacto {
+    position: absolute;
+    top: 75%;
+    width: 70%;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    /*text-transform: uppercase;*/
+    
+  }
+  .segundodiv .contacto {
+    position: absolute;
+    top: 75%;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+  }
+  .contacto a {
+    width: 100%;
+    height: auto;
+  }
+  .icon{
+    width:40px;
+    height:40px;
+    
+  }
+  
+
+  .tercerdiv {
+    position: absolute;
+    top: 51%;
+    left: 35.5%;
+    margin-left: 15%;
+    height: 60%;
+    width: 35%;
+    background-color: #d7d6d9;
+    
+  }
+  .educacion {
+    position: relative;
+    top: 3%;
+    left: 0%;
+    font-size: 18px;
+    color: black;
+    margin-left: 10%;
+    height: 30%;
+    width: 80%;
+    text-align: center;
+    
+  }
+  .edu1{
+    position: relative;
+    top: 5px;
+    font-size: 23px;
+    font-weight:900;
+    margin-right: 10px;
+    text-align: right;
+  }
+  .edu2{
+    position: relative;
+    top: -15px;
+    font-size: 8x;
+    color: #000000;
+    font-weight:100;
+    left: 7%;
+  }
+  .fecha{
+    position: relative;
+    top: -8%;
+    left: 0%;
+    width: 25%;
+    height: 6%;
+    color: #ebe52fe2;
+    text-align: center;
+    background-color: #000000;
+  }
+  .fec{
+    position: absolute;
+    top: -65%;
+    left: 62%;
+    font-size: 25px;
+  }
+  .educacion2 {
+    position: relative;
+    top: -3%;
+    left: 0%;
+    font-size: 13px;
+    color: black;
+    margin-left: 10%;
+    height: 18%;
+    width: 80%;
+    text-align: center;
+    
+  }
+  .edu22{
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    font-weight:800;
+    margin-right: 10px;
+    text-align: right;
+    font-weight:900;
+  }
+  .edu222{
+    position: relative;
+    top: -5px;
+    text-align: right;
+    font-size: 15px;
+    font-weight:100;
+    margin-right: 10px;
+  }
+  .fecha2{
+    position: relative;
+    top: -15%;
+    left: 0%;
+    width: 25%;
+    height: 6%;
+    color: #ebe52fe2;
+    text-align: center;
+    background-color: #000000;
+  }
+  
+
+  .educacion3 {
+    position: relative;
+    top: -8%;
+    left: 0%;
+    font-size: 13px;
+    color: black;
+    margin-left: 10%;
+    height: 18%;
+    width: 80%;
+    text-align: right;
+    
+  }
+  .edu3{
+    position: relative;
+    top: 10px;
+    font-size: 23px;
+    font-weight:900;
+    margin-right: 10px;
+    text-align: right;
+    font-weight:900;
+  }
+  .edu33{
+    position: relative;
+    top: -5px;
+    text-align: right;
+    font-size: 18px;
+    font-weight:100;
+    margin-right: 10px;
+  }
+  .fecha3{
+    position: relative;
+    top: -20%;
+    left: 0%;
+    width: 25%;
+    height: 6%;
+    color: #ebe52fe2;
+    text-align: center;
+    background-color: #000000;
+  }
+  
+
+  .cuartodiv {
+    position: absolute;
+    top: 111%;
+    left: 35.5%;
+    margin-left: 15%;
+    height: 60%;
+    width: 35%;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .con{
+    position: relative;
+    top: -15px;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .experiencia{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 18px;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    
+  }
+
+  .educacion4 {
+    position: relative;
+    top: 6%;
+    left: -5%;
+    font-size: 13px;
+    color: black;
+    margin-left: 10%;
+    height: 15%;
+    width: 80%;
+    text-align: right;
+    
+  }
+  .edu4{
+    position: relative;
+    top: -10px;
+    font-size: 23px;
+    font-weight:900;
+    margin-right: 10px;
+    text-align: right;
+    font-weight:900;
+  }
+  .edu44{
+    position: relative;
+    top: -20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight:100;
+    margin-right: 10px;
+  }
+  .fecha4{
+    position: relative;
+    top: -4%;
+    left: -37.5%;
+    width: 25%;
+    height: 6%;
+    color: #ebe52fe2;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  .educacion5 {
+    position: relative;
+    top:4%;
+    left: -5%;
+    font-size: 13px;
+    color: black;
+    margin-left: 10%;
+    height: 15%;
+    width: 80%;
+    text-align: right;
+    
+  }
+  .edu5{
+    position: relative;
+    top: -10px;
+    font-size: 23px;
+    font-weight:900;
+    margin-right: 10px;
+    text-align: right;
+    font-weight:900;
+  }
+  .edu55{
+    position: relative;
+    top: -20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight:100;
+    margin-right: 10px;
+  }
+  .fecha5{
+    position: relative;
+    top: -6%;
+    left: -37.5%;
+    width: 25%;
+    height: 6%;
+    color: #ebe52fe2;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  .educacion6 {
+    position: relative;
+    top: 3%;
+    left: -5%;
+    font-size: 13px;
+    color: black;
+    margin-left: 10%;
+    height: 15%;
+    width: 80%;
+    text-align: right;
+    
+  }
+  .edu6{
+    position: relative;
+    top: -10px;
+    font-size: 23px;
+    font-weight:900;
+    margin-right: 10px;
+    text-align: right;
+    font-weight:900;
+  }
+  .edu66{
+    position: relative;
+    top: -20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight:100;
+    margin-right: 10px;
+  }
+  .fecha6{
+    position: relative;
+    top: -7%;
+    left: -37.5%;
+    width: 25%;
+    height: 6%;
+    color: #ebe52fe2;
+    text-align: center;
+    background-color: #000000;
+  }
+
+
+
+  .lineafinal{
+    position: absolute;
+    top: 168%;
+    margin-left: 25%;
+    width: 50%;
+    height: 23px;
+    background-color: #000000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+  
+  
+
